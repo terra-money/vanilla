@@ -1,0 +1,7 @@
+syntax = "proto3";
+package vanilla.vanilla;
+
+option go_package = "github.com/terra-money/vanilla/x/vanilla/types";
+
+// Msg defines the Msg service.
+service Msg {}

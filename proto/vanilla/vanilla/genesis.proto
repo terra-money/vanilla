@@ -1,0 +1,12 @@
+syntax = "proto3";
+package vanilla.vanilla;
+
+import "gogoproto/gogo.proto";
+import "vanilla/vanilla/params.proto";
+
+option go_package = "github.com/terra-money/vanilla/x/vanilla/types";
+
+// GenesisState defines the vanilla module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
